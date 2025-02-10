@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://pngimg.com/d/birds_PNG81.png" alt="logo" width="50px">
+        </div>
+        <form class="formlogin" id="login-form">
+            <strong>Entre no Tzeeter agora mesmo!</strong>     
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <span class="error" id="email-erro"></span>
+            <input type="password" name="password" id="password" placeholder="Senha" required>
+            <span class="error" id="senha-erro"></span>
+            <a href="esqueceu.html">Esqueceu a senha?</a>
+            <button id="login-button" type="submit" disabled><strong>Entrar</strong></button>
+        </form>
+        
+        <p>Não tem uma conta? <a id="cadastrese" href="signup.html">Inscreva-se</a></p>
+    </div>    
+</body>
+</html>

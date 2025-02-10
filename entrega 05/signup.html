@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <button id="fechar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg></button>
+        <h2>Criar conta</h2>
+        <form id="signup-form">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <span class="error" id="nome-erro">Digite seu nome</span>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <span class="error" id="email-erro">Digite um email válido</span>
+
+            <input type="password" id="senha" placeholder="Senha" required>
+            <span class="error" id="senha-erro">A senha deve ter pelo menos 6 caracteres</span>
+
+            <input type="password" id="confirma-senha" placeholder="Confirme a Senha" required>
+            <span class="error" id="confirma-senha-erro">As senhas devem ser iguais</span>
+
+            <label><strong>Data de nascimento:</strong></label>
+            <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de emprese, de um animal de estimação ou outros.</p>
+            <div class="data-nascimento">
+                <select id="mes" required>
+                    <option value="" disabled selected>Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <select id="dia" required>
+                    <option value="" disabled selected>Dia</option>
+                </select>
+                <select id="ano" required>
+                    <option value="" disabled selected>Ano</option>
+                </select>
+            </div>
+            <span class="error" id="data-erro">Selecione uma data válida</span>
+
+            <div id="check">
+                <p>Receba e-mails sobre sua atividades no Twitter</p>
+                <input type="checkbox" id="confirmar-email">
+                
+            </div>
+            <div id="politicas">
+                <p>Você concorda com nossos Termos, com a política de Privacidade e com Uso de Cookies?</p>
+                <label><input type="radio" name="termos" id="aceitar"> Sim</label> <label><input type="radio" name="termos" id="rejeitar"> Não</label>
+               
+            </div>
+            <button id="signup-button" disabled>Inscrever-se</button>
+        </form>
+    </div>
+</body>
+</html>

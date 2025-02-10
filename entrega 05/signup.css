@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(158, 168, 168, 0.621);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    
+}
+#fechar{
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.data-nascimento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-nascimento select {
+    width: 32%;
+}
+
+#signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #88c4f5;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+p{
+    color:rgba(0, 0, 0, 0.578);
+}
